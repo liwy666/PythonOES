@@ -1,3 +1,4 @@
 # PythonOES
 
-### 我用Python的ctypes封装的宽睿OES的API，版本0.15.11.3
+### 基于python ctypes封装宽睿OES C语言API，非官方版本。供交流及内部使用。
+#### 版本0.15.11.3
