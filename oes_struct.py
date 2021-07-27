@@ -1044,7 +1044,7 @@ class eOesApiChannelTypeT(Enum):
 class PrintableStructure(Structure):
     def __str__(self):
         result = "<" + self.__class__.__name__ + "("
-        for name, _ in self.__fields__:
+        for name, _ in self._fields_:
             result = result + name + "=" + str(getattr(self, name)) + ", "
         return result[:-2] + ")>"
 
@@ -1061,7 +1061,7 @@ class PrintableStructure(Structure):
 class PrintableUnion(Union):
     def __str__(self):
         result = "<" + self.__class__.__name__ + "("
-        for name, _ in self.__fields__:
+        for name, _ in self._fields_:
             result = result + name + "=" + str(getattr(self, name)) + ", "
         return result[:-2] + ")>"
 
